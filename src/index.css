@@ -1,1 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --color-main: #0A0A0A;
+    --font-sans: "Mona Sans", sans-serif;
+}
+
+.mona-sans {
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
