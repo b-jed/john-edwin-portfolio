@@ -15,3 +15,55 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+.ts-card {
+  /* Tailwind utilities translated via @apply */
+  @apply relative flex flex-col justify-between bg-mist-950 shadow-[0px_6px_24px_0px_rgba(0,0,0,0.15)] overflow-hidden cursor-pointer border-none p-6 transition-all duration-300 ease-in-out;
+}
+
+/* Sliding background effect using pseudo-element */
+.ts-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background: #D2FF00;
+  transition: all 0.4s ease-in-out;
+  z-index: 1; /* Keep background behind content */
+}
+
+.ts-card:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+/* Target all text/elements inside the card to turn black on hover */
+.ts-card h3,
+.ts-card p {
+  position: relative;
+  z-index: 2; /* Sit on top of the sliding background */
+  transition: color 0.3s ease-in-out;
+}
+
+.ts-card:hover h3,
+.ts-card:hover p {
+  color: black !important; /* Force override explicit text classes */
+}
+
+.ts-card:hover {
+  color: black;
+  transform: scale(1.03);
+}
+
+.ts-card:hover h3 {
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}

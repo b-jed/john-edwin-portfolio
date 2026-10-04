@@ -1,5 +1,5 @@
 function Navbar () {
-    return <nav className="fixed top-3 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between w-[1333px] px-8 py-3 mona-sans text-xs bg-main/10 backdrop-blur-2xl">
+    return <nav className="fixed top-3 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between w-[1333px] px-8 py-3 mona-sans text-xs bg-main/50 backdrop-blur-lg">
         <div className="text-sm font-bold text-white">
             JOHN EDWIN BAÑEL
         </div>
