@@ -67,3 +67,16 @@
   50% { transform: scale(0.95); }
   100% { transform: scale(1); }
 }
+
+.real-project-card {
+  @apply p-5 border border-[#91ae00ac] max-w-sm w-full bg-main flex flex-col justify-between transition-all duration-300;
+}
+
+.real-project-card:hover {
+  box-shadow: 6px 6px 0px 0px rgba(145, 174, 0, 0.7);
+  transform: translate(-2px, -2px); /* Slight lift effect on hover */
+}
+
+.real-project-card:hover {
+  @apply transform scale-103 transition-transform duration-300 ease-in-out border border-neon;
+}
