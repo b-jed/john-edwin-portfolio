@@ -22,7 +22,7 @@ function TechStack() {
       
       {/* Section Header */}
       <div className="mb-12">
-        <span className="text-xs font-light tracking-[0.3em] text-[#D2FF00] uppercase block mb-2">
+        <span className="text-xs font-light tracking-[0.3em] text-neon uppercase block mb-2">
           WHAT I WORK WITH
         </span>
         <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight">
