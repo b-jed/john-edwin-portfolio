@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import TechStack from './sections/TechStack';
 import Projects from './sections/Projects';
+import Experience from './sections/Experience';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Hero />
       <TechStack />
       <Projects />
-
+      <Experience />
     </main>
   );
 }
